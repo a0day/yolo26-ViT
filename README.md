@@ -1,4 +1,4 @@
-本仓库用于将vision transfomer集成进入yolo26 backbone，目前已有efficientViT EdgeViT。
+本仓库用于将vision transfomer集成进入yolo26 backbone，目前已有efficientViT EdgeViT RepViT
 
 ---
 
@@ -7,3 +7,8 @@
 ---
 
 edgevit.ipynb中有关于该流程的详细注释，可用于参考。
+
+---
+
+实际操作中，出于轻量化考虑，默认集成版本去掉了FPN+PAN neck，在后续的“可选”代码中构建了轻量化FPN+PAN版本，可做对比。
+同时可选择加载预训练权重。
